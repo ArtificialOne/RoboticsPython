@@ -5,52 +5,50 @@ while True:
     print("4. Calculate Wattage (Voltage * Current)")
     print("5. Calculate Milliamps (Amps * 1000)")
     print("6. Exit Program")
-    number = input("> ")
+    number = input(">")
     if (number == "1"):
-        print("- Identifying Voltage -")
+        print("\n- Identifying Voltage -\n")
         i = float(input("Current: "))
         res = float(input("Resistence: "))
         volt = i * res
-        print(f"Voltage =  {volt:.2f}")
+        print(f"Voltage =  {volt:.2f}\n")
 
     elif(number == "2"):
-        print("- Identifying Resistance -")
+        print("\n- Identifying Resistance - \n")
         volt = float(input("Voltage: "))
         i = float(input("Current: "))
         res = volt / i
-        print(f"Resistance = {res:.2f}")
+        print(f"Resistance = {res:.2fe}\n")
 
     elif(number == "3"):
-        print("- Identifying Current -")
+        print("\n- Identifying Current -\n")
         volt = float(input("Voltage: "))
         res = float(input("Resistence: "))
         i = volt / res
-        print(f"Current = {i:.2f}")
+        print(f"Current = {i:.2f}\n")
 
     elif(number == "4"):
-        print("- Identifying Wattage -")
+        print("\n- Identifying Wattage -\n")
         volt = float(input("Voltage: "))
         i = float(input("Current: "))
         watt = volt * i
-        print(f"Wattage = {watt:.2f}")
+        print(f"Wattage = {watt:.2f}\n")
 
     elif(number == "5"):
-        print("- Identifying Milliamps -")
+        print("\n- Identifying Milliamps -\n")
         amps = float(input("Current: "))
         miliamp = amps * 1000
-        print(f"Milliamps: {miliamp:.2f}")
+        print(f"Milliamps: {miliamp:.2f}\n")
 
     elif(number == "6"):
         break
     else:
-        print("Not an option, Try again")
+        print("\nPlease choose a valid option.\n")
 
 
-#Wattage = Volts * Amps
-#Amperage (Current) = Watts / Volts
-#Amperage (Current) = Voltage / Resistance
-#MilliAmps = Amps * 1000
-#Voltage (Joules per Coulomb) = Current * Resistance
-#Resistance (Ohms) = Voltage / Amperage (Current)
+
+#Current aka Amperage (Net Flow)
+#Voltage aka Joules per Coulomb (Pressure)
+#Resistance aka Ohms
 
 #1 Horsepower = 726 Watts
