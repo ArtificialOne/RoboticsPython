@@ -5,7 +5,7 @@ while True:
     print("4. Calculate Wattage (Voltage * Current)")
     print("5. Calculate Milliamps (Amps * 1000)")
     print("6. Exit Program")
-    number = input(">")
+    number = int(input(">"))
     if (number == "1"):
         print("\n- Identifying Voltage -\n")
         i = float(input("Current: "))
