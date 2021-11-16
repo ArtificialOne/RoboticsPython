@@ -1,7 +1,7 @@
 while True:
-    print("1. Calculate Voltage (Current * Resistance)")
-    print("2. Calculate Resistance (Voltage / Current)")
-    print("3. Calculate Current (Voltage / Resistance)")
+    print("1. Calculate Voltage, Joules (Current * Resistance)")
+    print("2. Calculate Resistance, Ohms (Voltage / Current)")
+    print("3. Calculate Current, Amps (Voltage / Resistance)")
     print("4. Calculate Wattage (Voltage * Current)")
     print("5. Calculate Milliamps (Amps * 1000)")
     print("6. Exit Program")
